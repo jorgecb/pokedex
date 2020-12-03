@@ -1,0 +1,20 @@
+<div class="alerta"  *ngIf="alert">
+    AGREGADO CORRECTAMENTE A FAVORITOS
+
+</div>
+<div class="container">
+    <div >
+        <a *ngFor="let p of data"  class="card--media">
+            <div class="card--media__content" (click)="getRow(p)">
+                <span class="pokename"> {{p.name}}</span>
+                <img src="{{p.image}}" class="principal" alt="pokemon" width="100" height="100">
+                <span class="pokenum">#{{p.position}}</span>
+            </div>
+            <button (click)="setfavo(p)">
+                <img src="../../../assets/images/addfav.jpg" alt="pokedex" width="20" height="20" > favorito
+            </button>
+        </a>
+    </div>
+</div>
+
+   

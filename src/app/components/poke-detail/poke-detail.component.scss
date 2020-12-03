@@ -1,0 +1,50 @@
+@import "../../../assets/styles/variables.scss";
+
+.card {
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: gray;
+}
+
+.header-imageico {
+    background-size: cover;
+    float: left;
+}
+
+.headtitle{
+    background-color: white;
+    display: block;
+    height: 100px;
+    font-size: 30px;
+}
+
+.title{
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+   
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.subtitle{
+    color: $black;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.principal{
+    width: 300px;
+    height: 300px;  
+       -moz-animation: spinHorizontal 10s infinite linear;
+    -o-animation: spinHorizontal 10s infinite linear;    
+    -webkit-animation: spinHorizontal 10s infinite linear;
+    animation: spinHorizontal 10s infinite linear;
+}
+
+@keyframes spinHorizontal {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}

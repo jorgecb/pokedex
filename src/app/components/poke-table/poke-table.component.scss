@@ -1,0 +1,79 @@
+@import "../../../assets/styles/variables.scss";
+
+.container{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    height: 82vh;
+    overflow: auto;
+}
+.alerta{
+    background-color: aqua;
+    color: black;
+    font-size: 16px;
+    height: 70px;
+    width: 200px;
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center ;
+}
+button img{
+    width: 20px;
+    height: 20px;
+}
+button:hover{
+    cursor: pointer;
+    
+}
+.pokenum{
+    display: block;
+    background: black;
+}
+.card--media
+{
+    float: left;
+    box-shadow: inset 1px;
+    width: 220px;
+    height: 220px;
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    margin:5px;
+    padding:10px;
+}
+.card--media img.principal{
+    width: 150px;
+    height: 150px;
+     -moz-animation: spinHorizontal 10s infinite linear;
+    -o-animation: spinHorizontal 10s infinite linear;    
+    -webkit-animation: spinHorizontal 10s infinite linear;
+    animation: spinHorizontal 10s infinite linear;
+}
+.pokename{
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+::ng-deep.mat-form-field-label {
+    color: $white !important;
+}
+::ng-deep.mat-for
+m-field-underline {
+    background-color: $white !important;
+}
+
+input {
+    color: $white !important;
+}
+
+@keyframes spinHorizontal {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+}
